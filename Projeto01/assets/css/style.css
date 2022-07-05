@@ -7,7 +7,10 @@
 }
 
 /* Menu de navegação */
-#navegacao {
+header{
+  display: flex;
+  justify-content: space-between;
+  color: white;
   background: linear-gradient(
     90deg,
     rgba(103, 62, 138, 1) 21%,
@@ -16,6 +19,15 @@
   );
   position: fixed;
   width: 100%;
+  align-items: center;
+}
+
+header h2{
+  margin: 0 0 0 10rem;
+}
+
+nav#navegacao {
+
 }
 
 ul#menu {
@@ -42,7 +54,7 @@ ul#menu li a {
 /* header */
 
 /* Sobre mim */
-#apresentacao {
+section#apresentacao {
   text-align: center;
 }
 
@@ -51,7 +63,7 @@ section#apresentacao h2 {
 }
 
 /* Projetos */
-#projetos{
+section#projetos{
 
 }
 section#lista-projetos{
@@ -61,6 +73,7 @@ section#lista-projetos{
 }
 
 .proj{
+    display: flex;
     width: 15rem;
     padding: 2rem;
     margin: 2rem;
@@ -71,6 +84,7 @@ section#lista-projetos{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .redes {
@@ -79,6 +93,7 @@ section#lista-projetos{
   width: 15%;
   transition: .3s;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .redes:hover{
