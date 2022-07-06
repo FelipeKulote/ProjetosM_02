@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   font-family: Roboto Slab, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Menu de navegação */
@@ -51,45 +52,102 @@ ul#menu li a {
   text-decoration: none;
 }
 
-/* header */
+/* Titulo */
+div#titulo-principal{
+  padding: 10rem 0 0 10rem ;
+  display: flex;
+  flex-direction: column;
+}
+
+div#titulo-principal div{
+  width: 500px;
+  height: 80px;
+  text-align: center;
+  border-radius: 10px;
+  border-style: solid;
+  background: linear-gradient(
+    90deg,
+    rgba(103, 62, 138, 1) 21%,
+    rgba(63, 34, 93, 1) 55%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
+}
+
+div#titulo-principal h1{
+    margin-top: 15px;
+}
+
+div#titulo-principal figure img{
+  width: 20%;
+}
 
 /* Sobre mim */
 section#apresentacao {
+  margin: 10rem 15rem 10rem 15rem;
+  padding: 2rem;
   text-align: center;
+  box-shadow: 20px 20px 20px 20px #310e47;
 }
+
+/* section#apresentacao:hover{
+  transform: scale(1.2);
+} */
 
 section#apresentacao h2 {
     color: rgba(103,62,138,1);
 }
 
+section#apresentacao p{
+  padding: 2rem 5rem 2rem 5rem;
+}
+
 /* Projetos */
-section#projetos{
-
+section#projetos div#tit-projetos{
+  margin: 20rem;
+  text-align: center;
 }
+
 section#lista-projetos{
-    /* display: flex; */
+    margin: 15rem;
+    display: flex;
+    text-align: center;
     justify-content: space-evenly;
-    box-shadow: 5px #00000020;
+    box-shadow: 5px 5px 5px 5px #00000020;
+    flex-wrap: wrap;
 }
 
-.proj{
-    display: flex;
-    width: 15rem;
-    padding: 2rem;
-    margin: 2rem;
+section#lista-projetos figure img{
+  padding: 2rem;
+  align-items: center;
+  width: 40%;
 }
+
+/* section#projetos section div.proj{
+    width: 15rem;
+    padding: 5rem;
+    margin: 5rem; 
+} */
+
+
 
 /* Contatos */
-#contatos {
+section#contatos {
+  margin: 0 5rem;
+  padding: 5rem 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.redes {
-  justify-content: center;
-  align-items: center;
+section#contatos div{
+  text-align: center;
+}
+
+section#contatos .redes {
+  /* justify-content: center;
+  align-items: center; */
   width: 15%;
   transition: .3s;
   cursor: pointer;
