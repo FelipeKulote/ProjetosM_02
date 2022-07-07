@@ -82,6 +82,12 @@ div#titulo-principal figure img{
   width: 20%;
 }
 
+div#titulo-principal p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0 0 0 3rem ;
+}
+
 /* Sobre mim */
 section#apresentacao {
   margin: 10rem 15rem 10rem 15rem;
@@ -112,15 +118,19 @@ section#lista-projetos{
     margin: 15rem;
     display: flex;
     text-align: center;
-    justify-content: space-evenly;
-    box-shadow: 5px 5px 5px 5px #00000020;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    /* flex-wrap: wrap; */
+}
+section#lista-projetos .proj{
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px 5px #310e4790;
 }
 
 section#lista-projetos figure img{
   padding: 2rem;
   align-items: center;
-  width: 40%;
+  width: 80%;
 }
 
 /* section#projetos section div.proj{
@@ -164,10 +174,12 @@ section#contatos a {
 
 .perfil {
   text-align: center;
+  color: black;
 }
 
 .nome-rede{
     text-align: center;
+    color: rgba(103, 62, 138, 1);
 }
 
 
