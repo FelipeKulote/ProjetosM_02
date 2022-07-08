@@ -9,28 +9,39 @@
   </head>
   <body>
     <header>
-      <h2>Portifólio</h2>
+      <a id="portifolio" href="/">Portifólio</a>
       <nav id="navegacao">
         <ul id="menu">
           <li><a href="#">Início</a></li>
           <li><a href="#apresentacao">Sobre mim</a></li>
           <li><a href="#projetos">Projetos</a></li>
-          <!-- <li> <a href="#servicos"></a>Serviços</li>
-        <li> <a href="#skills"></a>Minhas skills</li> -->
+          <!-- <li> <a href="#servicos"></a>Serviços</li> -->
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </header>
-    <div id="titulo-principal">
-      <div>
-      <h1>Olá, eu sou Felipe Augusto</h1>
+    <section id="titulo-principal">
+      <div id="nome">
+        <div>
+          <h1>Olá, eu sou Felipe Augusto</h1>
+        </div>
+        <p>Desenvolvedor FullStack</p>
       </div>
-      <p>Desenvolvedor FullStack</p>
       <figure>
-        <img src="./assets/image/Imagem para perfil.jpeg" alt="" />
+        <img
+          src="./assets/image/Hand coding-bro.png"
+          alt="Foto de perfil Felipe"
+        />
       </figure>
-    </div>
+    </section>
     <section id="apresentacao">
+      <div>
+        <figure>
+          <img src="./assets/image/imagem para perfil com borda.jpeg" alt="">
+        </figure>
+      </div>
+      <div id="sobre">
       <h2>Sobre mim</h2>
       <article>
         <p>
@@ -40,9 +51,10 @@
           suscipit blanditiis eveniet numquam.
         </p>
       </article>
+      </div>
     </section>
     <section id="projetos">
-      <div>
+      <div id="tit-projetos">
         <h2>Pojetos</h2>
         <p class="desc-projeto">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
@@ -51,7 +63,7 @@
           at alias atque.
         </p>
       </div>
-      <section id="lista-projetos">
+      <div id="lista-projetos">
         <div class="proj">
           <h3>Detetive</h3>
           <figure>
@@ -112,7 +124,7 @@
         <div class="proj">
           <h3>Jogo interativo</h3>
           <figure>
-            <img src="./assets/image/Interativo.png" alt="" />
+            <img src="./assets/image/Interativo.png" alt="Imagem do Jogo Interativo" />
           </figure>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
@@ -121,7 +133,25 @@
             libero molestias vitae non architecto!
           </p>
         </div>
-      </section>
+      </div>
+    </section>
+    <section>
+      <div id="skills">
+        <h2>Minhas Skills</h2>
+        <p class="desc-skills">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
+          perferendis et ea, facilis iusto possimus magni? Maiores soluta natus
+          facilis assumenda doloribus deserunt, aliquid fuga, nostrum molestias
+          at alias atque.
+        </p>
+      </div>
+      <div>
+        <figure>
+          <img src="./assets/image/css-3.png" alt="Logo CSS">
+          <img src="./assets/image/html-5 (1).png" alt="Logo HTML">
+          <img src="./assets/image/js.png" alt="Logo JavaScript">
+        </figure>
+      </div>
     </section>
     <section id="contatos">
       <div>
@@ -161,7 +191,7 @@
       </div>
       <div>
         <figure>
-          <a href="https://www.linkedin.com/in/felipe-augusto-b4b66611b/">
+          <a href="https://www.linkedin.com/in/felipe-augusto-b4b66611b/" target="_blank">
             <img
               class="redes"
               src="./assets/image/linkedin.png"
@@ -174,7 +204,7 @@
       </div>
       <div>
         <figure>
-          <a href="https://github.com/FelipeKulote">
+          <a href="https://github.com/FelipeKulote" target="_blank">
             <img
               class="redes"
               src="./assets/image/github-sign.png"
@@ -186,6 +216,6 @@
         </figure>
       </div>
     </section>
-    <footer>Direitos reservados Felipe Augusto de Paula</footer>
+    <footer>Portifólio criado por Felipe Augusto de Paula</footer>
   </body>
 </html>

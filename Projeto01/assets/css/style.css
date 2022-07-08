@@ -23,12 +23,13 @@ header{
   align-items: center;
 }
 
-header h2{
+header a#portifolio{
   margin: 0 0 0 10rem;
-}
-
-nav#navegacao {
-
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 ul#menu {
@@ -53,13 +54,15 @@ ul#menu li a {
 }
 
 /* Titulo */
-div#titulo-principal{
-  padding: 10rem 0 0 10rem ;
+section#titulo-principal{
+  width: 100%;
+  padding: 5vw 0 0 15vw;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-div#titulo-principal div{
+section#titulo-principal div h1{
   width: 500px;
   height: 80px;
   text-align: center;
@@ -72,17 +75,21 @@ div#titulo-principal div{
     rgba(0, 0, 0, 1) 100%
   );
   color: white;
+  line-height: 4rem;
+  font-size: 2rem;
 }
 
-div#titulo-principal h1{
-    margin-top: 15px;
+section#titulo-principal figure{
+  padding: 0 0 0 10rem;
+  width: 50%;
+}
+section#titulo-principal figure img{
+  /* border-radius: 20px;
+  border-style: solid; */
+  width: 50%;
 }
 
-div#titulo-principal figure img{
-  width: 20%;
-}
-
-div#titulo-principal p{
+section#titulo-principal p{
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0 0 0 3rem ;
@@ -90,47 +97,75 @@ div#titulo-principal p{
 
 /* Sobre mim */
 section#apresentacao {
-  margin: 10rem 15rem 10rem 15rem;
+  width: 40vw;
+  color: white;
+  margin: 5vw auto;
   padding: 2rem;
   text-align: center;
+  align-items: center;
+  display: flex;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 21%,
+    rgba(63, 34, 93, 1) 55%,
+    rgba(103, 62, 138, 1) 100%
+  );
   box-shadow: 20px 20px 20px 20px #310e47;
 }
 
-/* section#apresentacao:hover{
-  transform: scale(1.2);
-} */
 
 section#apresentacao h2 {
-    color: rgba(103,62,138,1);
+    /* color: rgba(103,62,138,1); */
+}
+section#apresentacao img{
+  width: 20vw;
+   border-radius: 3vw;
+  border-style: solid;
 }
 
+
 section#apresentacao p{
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 3rem 2rem 3rem;
 }
 
 /* Projetos */
+section#projetos{
+  width: 100%;
+}
+
 section#projetos div#tit-projetos{
   margin: 20rem;
   text-align: center;
 }
 
-section#lista-projetos{
+div#lista-projetos{
     margin: 15rem;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
     gap: 3rem;
-    /* flex-wrap: wrap; */
-}
-section#lista-projetos .proj{
-  flex-wrap: wrap;
-  box-shadow: 5px 5px 5px 5px #310e4790;
+    flex-wrap: wrap;
 }
 
-section#lista-projetos figure img{
+div#lista-projetos div.proj{
+  width: 20vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: .5s ease;
+  box-shadow: 5px 5px 5px 5px #310e47;
+}
+
+div#lista-projetos figure img{
   padding: 2rem;
   align-items: center;
   width: 80%;
+}
+
+div#lista-projetos div.proj:hover{
+  transform: scale(1.5);
+  /* background-color: black;
+  color: white; */
 }
 
 /* section#projetos section div.proj{
@@ -149,9 +184,11 @@ section#contatos {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 section#contatos div{
+  padding: 2rem 0;
   text-align: center;
 }
 
