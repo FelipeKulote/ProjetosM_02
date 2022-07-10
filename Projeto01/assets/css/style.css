@@ -137,6 +137,11 @@ section#projetos {
   width: 100%;
 }
 
+section#projetos a{
+  color: black;
+  text-decoration: none;
+}
+
 section#projetos div#tit-projetos {
   margin: 10rem 20rem 0 20rem;
   text-align: center;
