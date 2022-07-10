@@ -11,6 +11,9 @@
     <header>
       <a id="portifolio" href="/">Portifólio</a>
       <nav id="navegacao">
+        <button id="btn-menu">MENU
+          <span id="hamburguer"></span>
+        </button>
         <ul id="menu">
           <li><a href="#">Início</a></li>
           <li><a href="#apresentacao">Sobre mim</a></li>
@@ -55,7 +58,7 @@
     </section>
     <section id="projetos">
       <div id="tit-projetos">
-        <h2>Pojetos</h2>
+        <h2>Projetos</h2>
         <p class="desc-projeto">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
           perferendis et ea, facilis iusto possimus magni? Maiores soluta natus
@@ -135,8 +138,8 @@
         </div>
       </div>
     </section>
-    <section>
-      <div id="skills">
+    <section id="skills">
+      <div id="tit-skills">
         <h2>Minhas Skills</h2>
         <p class="desc-skills">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo
@@ -147,24 +150,15 @@
       </div>
       <div>
         <figure>
-          <img src="./assets/image/css-3.png" alt="Logo CSS">
-          <img src="./assets/image/html-5 (1).png" alt="Logo HTML">
           <img src="./assets/image/js.png" alt="Logo JavaScript">
+          <img src="./assets/image/html-5 (1).png" alt="Logo HTML">
+          <img src="./assets/image/css-3.png" alt="Logo CSS">
         </figure>
       </div>
     </section>
     <section id="contatos">
-      <div>
-        <figure>
-          <img
-            class="redes"
-            src="./assets/image/email.png"
-            alt="Logo do E-mail"
-          />
-          <p class="perfil">lipe_augustobq@hotmail.com</p>
-          <h3 class="nome-rede">E-mail</h3>
-        </figure>
-      </div>
+      <h2>Contatos</h2>
+      <div id="lista-contatos">
       <div>
         <figure>
           <img
@@ -215,7 +209,20 @@
           </a>
         </figure>
       </div>
+      <div>
+        <figure>
+          <img
+            class="redes"
+            src="./assets/image/email.png"
+            alt="Logo do E-mail"
+          />
+          <p class="perfil">lipe_augustobq@hotmail.com</p>
+          <h3 class="nome-rede">E-mail</h3>
+        </figure>
+      </div>
+      </div>
     </section>
     <footer>Portifólio criado por Felipe Augusto de Paula</footer>
+    <script src = "./assets/js/script.js"></script>
   </body>
 </html>
