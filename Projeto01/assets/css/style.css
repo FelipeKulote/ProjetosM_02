@@ -420,10 +420,11 @@ footer {
 @media (max-width: 900px){
   #btn-menu{
     display: flex;
-    padding: .5rem 1rem;
+    padding: .6rem 2rem;
     border: none;
     background-color: none;
     cursor: pointer;
+    gap: .5rem;
   }
 
   #hamburguer{
