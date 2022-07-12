@@ -130,6 +130,7 @@ section#apresentacao img {
 
 section#apresentacao p {
   padding: 2rem 3rem 2rem 3rem;
+  text-align: justify;
 }
 
 /* Projetos */
